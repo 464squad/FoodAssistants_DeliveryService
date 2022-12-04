@@ -1,0 +1,23 @@
+{
+  "name": "foodassistants_deliveryservice",
+  "version": "1.0.0",
+  "description": "Delivery Team Objective - Create delivery-dev branch and create Delivery page component, DeliveryTable component, and DeliveryTableItem component.\r Create API with readDeliveries (GET)\r CreateDeliveryTask (POST) \r UpdateDelieveryTask (PUT) \r DeleteDelieveryTask (Delete) routes returning example data. and push to github",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/464squad/FoodAssistants_DeliveryService.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/464squad/FoodAssistants_DeliveryService/issues"
+  },
+  "homepage": "https://github.com/464squad/FoodAssistants_DeliveryService#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
