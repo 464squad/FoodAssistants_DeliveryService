@@ -15,10 +15,12 @@ app.put('/', (req, res) => {
     
 })
 
+app.delete("/users", (req, res) => {
+  res.send({ data: "user deleted"});
+});
+
 app.listen(3000, () => {
     console.log("Server started on port 3000");
 });
 
-app.delete("/users", (req, res) => {
-  res.send({ data: "user deleted"});
-});
+
