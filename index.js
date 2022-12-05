@@ -10,7 +10,9 @@ app.get("/",(req, res)=>{
 });
 
 app.put('/', (req, res) => {
-  res.send("")
+    
+  res.send("PUT request updates Delivery Tasks ")
+    
 })
 
 app.listen(3000, () => {
