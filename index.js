@@ -1,5 +1,7 @@
-const express = require("express");
-const app = express();
+const express = require('express')
+const path = require('path')
+const app = express()
+const port = 3000
 
 app.get("/",(req, res)=>{
 
@@ -9,6 +11,32 @@ app.get("/",(req, res)=>{
 
 });
 
-app.listen(3000, () => {
-    console.log("Server started on port 3000");
+app.put('/', (req, res) => {
+    
+  res.send("PUT request updates Delivery Tasks ")
+    
+})
+
+
+app.delete("/users", (req, res) => {
+  res.send({ data: "user deleted"});
+});
+
+
+app.post("/", (req, res) => {
+  try {
+    res.json(req.body);
+  } catch (err) {
+    console.error(err.message)
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+  
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+  
 });
