@@ -1,12 +1,13 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const port = 3000
+const port = process.env.port || 8080;
 
 app.get("/",(req, res)=>{
 
     //temp holder
     const user = req.query.user;
+    res.json({message: 'Docker'});
     res.send(user + "!");
 
 });
@@ -32,11 +33,5 @@ app.post("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-  
-});
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-  
+  console.log(`App is listening on port 8080`)
 });
