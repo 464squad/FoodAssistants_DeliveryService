@@ -4,7 +4,6 @@ const app = express()
 const port = process.env.port || 8080;
 
 app.get("/",(req, res)=>{
-
     //temp holder
     const user = req.query.user;
     res.json({message: 'Docker'});
@@ -13,9 +12,7 @@ app.get("/",(req, res)=>{
 });
 
 app.put('/', (req, res) => {
-    
   res.send("PUT request updates Delivery Tasks ")
-    
 })
 
 
