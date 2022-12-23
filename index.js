@@ -8,18 +8,15 @@ app.get("/",(req, res)=>{
     const user = req.query.user;
     res.json({message: 'Docker'});
     res.send(user + "!");
-
 });
 
 app.put('/', (req, res) => {
   res.send("PUT request updates Delivery Tasks ")
 })
 
-
 app.delete("/users", (req, res) => {
   res.send({ data: "user deleted"});
 });
-
 
 app.post("/", (req, res) => {
   try {
