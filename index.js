@@ -10,9 +10,6 @@ app.get("/",(req, res)=>{
     res.send(user + "!");
 });
 
-app.put('/', (req, res) => {
-  res.send("PUT request updates Delivery Tasks ")
-})
 
 app.delete("/users", (req, res) => {
   res.send({ data: "user deleted"});
