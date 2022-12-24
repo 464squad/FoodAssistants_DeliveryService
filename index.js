@@ -9,8 +9,10 @@ app.get("/",(req, res)=>{
     res.json({message: 'Docker'});
     res.send(user + "!");
 });
-app.put('/update', (req, res) => {
 
+app.put('/update', (req, res) => {
+    res.send("delivery task update")
+    
 app.delete("/users", (req, res) => {
   res.send({ data: "user deleted"});
 });
